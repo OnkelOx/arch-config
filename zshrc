@@ -16,9 +16,6 @@ eval "$(starship init zsh)"
 
 # --- ALIASES ---
 
-alias ls='ls --color=auto'
-alias la='ls -a --color=auto'
+export LS_OPTIONS='--color=auto'
 
-alias dir='dir --color=auto'
-
-
+alias la='ls -a'
