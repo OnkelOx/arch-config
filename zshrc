@@ -12,10 +12,19 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+#initialize starship prompt 
 eval "$(starship init zsh)"
 
-# --- ALIASES ---
+#use custom colors for ls
+eval "$(dircolors /etc/DIR_COLORS)"
 
+#make --color=auto defaulti
+#This is not working
 export LS_OPTIONS='--color=auto'
 
-alias la='ls -a'
+#list color
+alias ls='ls --color=auto'
+
+#list all 
+alias la='ls -a --color=auto'
+
